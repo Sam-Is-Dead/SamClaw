@@ -2,7 +2,10 @@
   "name": "samclaw",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "private": false,
+  "bin": {
+    "samclaw": "./index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "prettier": "^3.9.4"
@@ -11,6 +14,11 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@types/node": "^26.1.0"
+    "@clack/core": "^1.4.3",
+    "@clack/prompts": "^1.7.0",
+    "@types/node": "^26.1.0",
+    "chalk": "^5.6.2",
+    "commander": "^15.0.0",
+    "figlet": "^1.11.0"
   }
 }
